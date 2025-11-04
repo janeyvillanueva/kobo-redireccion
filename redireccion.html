@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redireccionando...</title>
+  <script>
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      const respuesta = params.get("qa");
+
+      if (respuesta === "2") {
+        window.location.href = "https://www.google.com";
+      } else {
+        window.location.href = "https://www.bing.com";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Procesando tu respuesta...</p>
+</body>
+</html>
